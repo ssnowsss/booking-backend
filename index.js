@@ -43,7 +43,9 @@ app.use((err, req, res, next) => {
   const errMessage = err.message || "something went wrong"
   return res.status(errStatus).json(err.stack)
 })
-
+app.post('/', (req, res) => {
+  res.send("success")
+})
 app.listen(8800, () => {
   console.log("connected to backend.");
 })
