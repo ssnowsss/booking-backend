@@ -3,7 +3,7 @@ const mongoose = require("mongoose")
 const app = express()
 const cookieparser = require("cookie-parser")
 const cors = require('cors')
-import dotenv from "dotenv"
+const dotenv = require("dotenv") 
 
 dotenv.config()
 
